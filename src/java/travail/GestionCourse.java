@@ -1,5 +1,5 @@
 
-package Travail;
+package travail;
 
 import java.sql.*;
 import java.util.*;
@@ -12,6 +12,7 @@ public class GestionCourse
     
     public GestionCourse()
     {
+        
         stmt = GestionBdd.connexionBdd(GestionBdd.TYPE_MYSQL, "fbcn", "localhost", "root", "");
     }
     public ArrayList getListe() 

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
         <%@ include file="entete.html" %>
         <%@ page import="java.util.*" %>
-        <%@ page import="Travail.*" %>
+        <%@ page import="travail.*" %>
         <div id="corps">
                 <form method="post" action="ControleurCourse?choix=1">
                 <table>
@@ -14,13 +14,13 @@
                         {
                             Course uneCourse = (Course)colCourse.get(i);
                             %>
-                            <tr><td><a href="ControleurCourse?choix=1&code=<%= uneCourse.getNom() %>"><%= uneCourse.getNom() %></a></td>
-                                <td><a href="ControleurCourse?choix=1&code=<%= uneCourse.getNom() %>"><%= uneCourse.getLieu() %></a></td>
-                                <td><a href="ControleurCourse?choix=1&code=<%= uneCourse.getNom() %>"><%= uneCourse.getDate() %></a></td>
-                                <td><a href="ControleurCourse?choix=1&code=<%= uneCourse.getNom() %>"><%= uneCourse.getHeureDepart() %></a></td>
-                                <td><a href="ControleurCourse?choix=1&code=<%= uneCourse.getNom() %>"><%= uneCourse.getDistance() %></a></td>
-                                <td><a href="ControleurCourse?choix=1&code=<%= uneCourse.getNom() %>"><%= uneCourse.getPrix() %></a></td>
-                                <td><a href="ControleurCourse?choix=1&code=<%= uneCourse.getNom() %>"><%= uneCourse.getChallenge() %></a></td>
+                <tr><td><a href="#"><%= uneCourse.getNom() %></a></td>
+                    <td><a href="#"><%= uneCourse.getLieu() %></a></td>
+                    <td><a href="#"><%= uneCourse.getDate() %></a></td>
+                    <td><a href="#"><%= uneCourse.getHeureDepart() %></a></td>
+                    <td><a href="#"><%= uneCourse.getDistance() %></a></td>
+                    <td><a href="#"><%= uneCourse.getPrix() %></a></td>
+                    <td><a href="#"><%= uneCourse.getChallenge() %></a></td>
                             </tr>
                             <%
                         }
