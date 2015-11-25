@@ -1,0 +1,30 @@
+Menu : 
+	Acceuil avec la présentation
+	Calendrier des courses
+	Challenge solidarité
+Parties utilisateur:
+	Résultat des courses
+	Présentation des courses ( alimentation du calendrier ) 
+Partie admin : 
+	Création / modification des utulisateurs reconnus
+	Validation des résultats
+
+Faire un menu jQuery avec Accueil / Calendrier / Challenge / Résultat / Présentation / USER / Validation
+
+Dans acceuil :  juste une présentation des courses nature et trails
+Dans calendrier : Calendirer avec les dates des courses renseigner 
+Dans challenge : consultation des résultats et du calendrier. Interface de recherche. Classement individuel et par club
+Dans résultat : Renseigner les résultats ( provisoirement )
+Dans Présentation : Sélection d'une course et information concernant cette course
+Dans USER : Création et modification des utilisateur ( seulement pour les admins ) 
+Dans validation : Validation des résultats d'une course ( définitif )
+
+
+
+csv : 
+res_nomCourse_distance.csv
+1) Créer la course
+2) Créer le coureur ( s'il n'éxiste pas ) 
+3) Renseigner la table Courir
+
+ 
