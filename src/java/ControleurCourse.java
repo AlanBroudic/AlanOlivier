@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import java.util.*;
-import Travail.*;
+import travail.*;
 import javax.servlet.RequestDispatcher;
 /**
  *
@@ -21,7 +21,7 @@ import javax.servlet.RequestDispatcher;
  */
 public class ControleurCourse extends HttpServlet {
     
-    GestionCourse tr;
+    GestionCourse tc;
     ArrayList colCourse;
     
     protected void processRequest(HttpServletRequest requete, HttpServletResponse reponse)
@@ -47,8 +47,8 @@ public class ControleurCourse extends HttpServlet {
                     allerPage("Accueil.jsp", requete, reponse);
                     break;
                 case 1 : //Affichage du calendrier des courses
-                    tr = new GestionCourse();
-                    colCourse = tr.getListe();
+                    tc = new GestionCourse();
+                    colCourse = tc.getListe();
                     requete.setAttribute("colCourse", colCourse);
                     allerPage("listeCourse.jsp", requete, reponse);
                     break;
@@ -91,33 +91,18 @@ public class ControleurCourse extends HttpServlet {
         d.forward(req, rep);
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+    
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void doGet(HttpServletRequest requete, HttpServletResponse reponse)
             throws ServletException, IOException {
-        processRequest(request, response);
+        processRequest(requete, reponse);
     }
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+   
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest requete, HttpServletResponse reponse)
             throws ServletException, IOException {
-        processRequest(request, response);
+        processRequest(requete, reponse);
     }
 
     /**
