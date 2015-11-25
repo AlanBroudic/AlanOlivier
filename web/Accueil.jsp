@@ -14,6 +14,7 @@
     </head>
     <body>     
         <div id="corps">
+            <br/>
             <h1>Fédération Française de course nature</h1>
             <div id="partie_gauche">
                 <img src="./images/accueil1.jpg" width="100%" height="100%"/>

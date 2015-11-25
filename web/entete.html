@@ -1,34 +1,44 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" title="Design" href="styles.css" />
-        <title>Fédération bretonne de course nature</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	
-    </head>
-    <body>
-        <div id="entete">
-        <br/><br/>
-            
-            <nav class="navbar navbar-inverse navbar-fixed-top">
- 		<div class="container-fluid">
-		    <div class="navbar-header">
-		      <a class="navbar-brand" href="Accueil.jsp">FBCN</a>
-		    </div>
-                    <div>
-                        <ul class="nav navbar-nav">
-                            <li><a href="ControleurCourse?choix=1">Calendrier des courses</a></li>
-                            <li><a href="#">Challenge solidarité</a></li>
-                            <li><a href="#">Résultat</a></li>
-                            <li><a href="#">Présentation d'une course</a></li>
-                            <li><a href="#">Création/Modification des utilisateurs</a></li>
-                            <li><a href="#">Validation des résultat</a></li>
-                        </ul>
-                    </div>
-	 	</div>
-            </nav>
-        </div>
-    </body>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link rel="stylesheet" type="text/css" title="Design" href="styles.css" />
+  <title>Fédération bretonne de course nature</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="ControleurCourse?choix=0">FBCN</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="ControleurCourse?choix=1">Calendrier des courses</a></li>
+        <li><a href="ControleurCourse?choix=2">Challenge solidarité</a></li>
+        <li><a href="ControleurCourse?choix=3">Résultat</a></li>
+        <li><a href="ControleurCourse?choix=4">Présentation d'une course</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Utilisateurs <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="ControleurCourse?choix=5">Voir</a></li>
+            <li><a href="ControleurCourse?choix=6">Modifier</a></li>
+            <li><a href="ControleurCourse?choix=7">Ajouter</a></li>
+            <li><a href="ControleurCourse?choix=8">Supprimer</a></li>
+          </ul>
+        </li>
+        <li><a href="ControleurCourse?choix=6">Validation des résultat</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> S'inscrire</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Se connecter</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</body>
 </html>

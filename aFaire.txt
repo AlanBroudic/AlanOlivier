@@ -1,22 +1,22 @@
 Menu : 
-	Acceuil avec la présentation
+	Accueil avec la présentation
 	Calendrier des courses
 	Challenge solidarité
 Parties utilisateur:
 	Résultat des courses
 	Présentation des courses ( alimentation du calendrier ) 
 Partie admin : 
-	Création / modification des utulisateurs reconnus
+	Création / modification des utilisateurs reconnus
 	Validation des résultats
 
 Faire un menu jQuery avec Accueil / Calendrier / Challenge / Résultat / Présentation / USER / Validation
 
-Dans acceuil :  juste une présentation des courses nature et trails
+Dans accueil :  juste une présentation des courses nature et trails
 Dans calendrier : Calendirer avec les dates des courses renseigner 
 Dans challenge : consultation des résultats et du calendrier. Interface de recherche. Classement individuel et par club
 Dans résultat : Renseigner les résultats ( provisoirement )
 Dans Présentation : Sélection d'une course et information concernant cette course
-Dans USER : Création et modification des utilisateur ( seulement pour les admins ) 
+Dans USER : Création et modification des utilisateurs ( seulement pour les admins ) 
 Dans validation : Validation des résultats d'une course ( définitif )
 
 

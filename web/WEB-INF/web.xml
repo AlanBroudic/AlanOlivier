@@ -4,9 +4,17 @@
         <servlet-name>ControleurCourse</servlet-name>
         <servlet-class>ControleurCourse</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GestionCoureur</servlet-name>
+        <servlet-class>travail.GestionCoureur</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ControleurCourse</servlet-name>
         <url-pattern>/ControleurCourse</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GestionCoureur</servlet-name>
+        <url-pattern>/GestionCoureur</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
