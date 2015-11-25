@@ -8,10 +8,7 @@ package travail;
 import java.sql.Time;
 import java.util.Date;
 
-/**
- *
- * @author alan
- */
+
 public class Course 
 {
     String nom, lieu;
