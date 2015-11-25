@@ -12,7 +12,7 @@ public class GestionCourse
     
     public GestionCourse()
     {
-        stmt = GestionBdd.connexionBdd(GestionBdd.TYPE_MYSQL, "ski", "localhost", "root", "");
+        stmt = GestionBdd.connexionBdd(GestionBdd.TYPE_MYSQL, "fbcn", "localhost", "root", "");
     }
     public ArrayList getListe() 
     {
@@ -20,7 +20,7 @@ public class GestionCourse
  	
  	try
    	{
-            ResultSet rs = stmt.executeQuery("select * from course order by 'date'");
+            ResultSet rs = stmt.executeQuery("select * from course order by date");
                     
             while(rs.next())
             {
